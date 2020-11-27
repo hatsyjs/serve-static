@@ -11,7 +11,7 @@ Static Content Handler
 [npm-url]: https://www.npmjs.com/package/@hatsy/serve-static
 [build-status-img]: https://github.com/hatsyjs/serve-static/workflows/Build/badge.svg
 [build-status-link]: https://github.com/hatsyjs/serve-static/actions?query=workflow:Build
-[codecov-image]: https://codecov.io/gh/hatsyjs/serve-statis/branch/master/graph/badge.svg
+[codecov-image]: https://codecov.io/gh/hatsyjs/serve-static/branch/master/graph/badge.svg
 [codecov-url]: https://codecov.io/gh/hatsyjs/serve-static
 [github-image]: https://img.shields.io/static/v1?logo=github&label=GitHub&message=project&color=informational
 [github-url]: https://github.com/hatsyjs/serve-static
