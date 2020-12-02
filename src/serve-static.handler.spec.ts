@@ -1,4 +1,4 @@
-import { httpListener, HttpMeans } from '@hatsy/hatsy';
+import type { HttpMeans } from '@hatsy/hatsy';
 import { Logging } from '@hatsy/hatsy/core';
 import { suppressedLog, TestHttpServer } from '@hatsy/hatsy/testing';
 import { dispatchByName, RouterMeans, Routing } from '@hatsy/router';
@@ -21,7 +21,7 @@ describe('serveStatic', () => {
   });
 
   function setup(config?: ServeStaticConfig): void {
-    server.listener.mockImplementation(httpListener(
+    server.handleBy(
         {
           handleBy(handler) {
             return Logging.logBy(suppressedLog).for(handler);
@@ -30,7 +30,7 @@ describe('serveStatic', () => {
         Routing.for(dispatchByName<HttpMeans & RouterMeans>({
           root: serveStatic('src/spec/root', config),
         })),
-    ));
+    );
   }
 
   it('serves static file', async () => {
