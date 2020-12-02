@@ -24,11 +24,11 @@
     "send": "^0.17.1"
   },
   "peerDependencies": {
-    "@hatsy/hatsy": "^2.0.2",
+    "@hatsy/hatsy": "^2.1.0",
     "@hatsy/router": "^2.0.4"
   },
   "devDependencies": {
-    "@hatsy/hatsy": "^2.0.2",
+    "@hatsy/hatsy": "^2.1.0",
     "@hatsy/route-match": "^1.2.0",
     "@hatsy/router": "^2.0.4",
     "@rollup/plugin-commonjs": "^17.0.0",
