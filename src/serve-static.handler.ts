@@ -12,8 +12,8 @@ import type { ServeStaticConfig } from './serve-static-config';
 /**
  * Creates a request handler that serves static content from the given `root` directory.
  *
- * @param root  Root directory to serve files from.
- * @param config  Static contents service configuration.
+ * @param root - Root directory to serve files from.
+ * @param config - Static contents service configuration.
  *
  * @returns New HTTP route processing handler.
  */
