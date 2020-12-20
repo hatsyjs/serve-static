@@ -22,7 +22,7 @@ export interface ServeStaticConfig {
   /**
    * Whether to set [Cache-Control] response header.
    *
-   * Disabling this will ignore the [[immutable]] and [[maxAge]] options.
+   * Disabling this will ignore the {@link immutable} and {@link maxAge} options.
    *
    * [Cache-Control]: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control
    *
@@ -71,8 +71,8 @@ export interface ServeStaticConfig {
   /**
    * Whether to add the `immutable` directive in the [Cache-Control] response header.
    *
-   * If enabled, the [[maxAge]] option should also be specified to enable caching. The `immutable` directive will
-   * prevent supported clients from making conditional requests during the life of the [[maxAge]] option to check if
+   * If enabled, the {@link maxAge} option should also be specified to enable caching. The `immutable` directive will
+   * prevent supported clients from making conditional requests during the life of the {@link maxAge} option to check if
    * the file has changed.
    *
    * [Cache-Control]: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control
