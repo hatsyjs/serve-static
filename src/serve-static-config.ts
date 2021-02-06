@@ -1,8 +1,4 @@
 /**
- * @packageDocumentation
- * @module @hatsy/serve-static
- */
-/**
  * Static contents service configuration.
  */
 export interface ServeStaticConfig {

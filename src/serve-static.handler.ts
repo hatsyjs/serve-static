@@ -1,7 +1,3 @@
-/**
- * @packageDocumentation
- * @module @hatsy/serve-static
- */
 import { HttpError, HttpMeans, RequestHandler } from '@hatsy/hatsy';
 import type { RouterMeans } from '@hatsy/router';
 import { resolve } from 'path';
