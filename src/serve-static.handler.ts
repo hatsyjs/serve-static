@@ -53,4 +53,3 @@ export function serveStatic(root: string, config: ServeStaticConfig = {}): Reque
     });
   };
 }
-
