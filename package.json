@@ -28,7 +28,7 @@
     "@hatsy/route-match": "^1.4.0",
     "@hatsy/router": "^2.2.0",
     "@jest/globals": "^27.0.3",
-    "@proc7ts/logger": "^1.0.0",
+    "@proc7ts/logger": "^1.1.0",
     "@rollup/plugin-commonjs": "^19.0.0",
     "@rollup/plugin-node-resolve": "^13.0.0",
     "@run-z/eslint-config": "^1.3.0",
