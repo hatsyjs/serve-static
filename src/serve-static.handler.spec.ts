@@ -1,8 +1,9 @@
 import type { HttpMeans } from '@hatsy/hatsy';
 import { Logging } from '@hatsy/hatsy/core';
-import { suppressedLog, TestHttpServer } from '@hatsy/hatsy/testing';
+import { TestHttpServer } from '@hatsy/hatsy/testing';
 import { dispatchByName, RouterMeans, Routing } from '@hatsy/router';
 import { afterAll, beforeAll, beforeEach, describe, expect, it } from '@jest/globals';
+import { silentLogger } from '@proc7ts/logger';
 import type { ServeStaticConfig } from './serve-static-config';
 import { serveStatic } from './serve-static.handler';
 
@@ -25,7 +26,7 @@ describe('serveStatic', () => {
     server.handleBy(
         {
           handleBy(handler) {
-            return Logging.logBy(suppressedLog).for(handler);
+            return Logging.logBy(silentLogger).for(handler);
           },
         },
         Routing.for(dispatchByName<HttpMeans & RouterMeans>({
