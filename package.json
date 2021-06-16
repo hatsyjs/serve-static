@@ -1,6 +1,6 @@
 {
   "name": "@hatsy/serve-static",
-  "version": "2.3.0-dev.0",
+  "version": "2.3.0",
   "description": "Hatsy request handler that serves static content",
   "homepage": "https://github.com/hatsyjs/serve-static",
   "repository": {
