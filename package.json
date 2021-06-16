@@ -1,6 +1,6 @@
 {
   "name": "@hatsy/serve-static",
-  "version": "2.2.0",
+  "version": "2.3.0-dev.0",
   "description": "Hatsy request handler that serves static content",
   "homepage": "https://github.com/hatsyjs/serve-static",
   "repository": {
@@ -20,15 +20,15 @@
     "send": "^0.17.1"
   },
   "peerDependencies": {
-    "@hatsy/hatsy": "^2.4.0",
+    "@hatsy/hatsy": "^2.5.0",
     "@hatsy/router": "^2.2.0"
   },
   "devDependencies": {
-    "@hatsy/hatsy": "^2.4.0",
+    "@hatsy/hatsy": "^2.5.0",
     "@hatsy/route-match": "^1.4.0",
     "@hatsy/router": "^2.2.0",
     "@jest/globals": "^27.0.3",
-    "@proc7ts/logger": "^1.1.0",
+    "@proc7ts/logger": "^1.2.0",
     "@rollup/plugin-commonjs": "^19.0.0",
     "@rollup/plugin-node-resolve": "^13.0.0",
     "@run-z/eslint-config": "^1.3.0",
@@ -47,7 +47,7 @@
     "rollup-plugin-flat-dts": "^1.2.2",
     "rollup-plugin-sourcemaps": "^0.6.3",
     "rollup-plugin-typescript2": "^0.30.0",
-    "run-z": "^1.8.0",
+    "run-z": "^1.9.1",
     "shx": "^0.3.3",
     "ts-jest": "^27.0.3",
     "tslib": "^2.3.0",
