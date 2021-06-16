@@ -26,7 +26,7 @@
   "devDependencies": {
     "@hatsy/hatsy": "^2.5.0",
     "@hatsy/route-match": "^1.4.0",
-    "@hatsy/router": "^2.2.0",
+    "@hatsy/router": "^2.3.0",
     "@jest/globals": "^27.0.3",
     "@proc7ts/logger": "^1.2.0",
     "@rollup/plugin-commonjs": "^19.0.0",
