@@ -2,6 +2,11 @@
   "name": "@hatsy/serve-static",
   "version": "2.3.0",
   "description": "Hatsy request handler that serves static content",
+  "keywords": [
+    "http-middleware",
+    "static-file-server",
+    "static-resources"
+  ],
   "homepage": "https://github.com/hatsyjs/serve-static",
   "repository": {
     "type": "git",
