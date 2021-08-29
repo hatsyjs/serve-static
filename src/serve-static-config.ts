@@ -13,7 +13,7 @@ export interface ServeStaticConfig {
    *
    * @default `true`
    */
-  readonly acceptRanges?: boolean;
+  readonly acceptRanges?: boolean | undefined;
 
   /**
    * Whether to set [Cache-Control] response header.
@@ -24,7 +24,7 @@ export interface ServeStaticConfig {
    *
    * @default `true`
    */
-  readonly cacheControl?: boolean;
+  readonly cacheControl?: boolean | undefined;
 
   /**
    * How "dotfiles" are treated when encountered.
@@ -42,7 +42,7 @@ export interface ServeStaticConfig {
    *
    * @default `ignore`
    */
-  readonly dotfiles?: 'allow' | 'deny' | 'ignore';
+  readonly dotfiles?: 'allow' | 'deny' | 'ignore' | undefined;
 
   /**
    * Whether to generate [ETag] response headers.
@@ -51,7 +51,7 @@ export interface ServeStaticConfig {
    *
    * @default `true`
    */
-  readonly etag?: boolean;
+  readonly etag?: boolean | undefined;
 
   /**
    * File extension fallbacks.
@@ -62,7 +62,7 @@ export interface ServeStaticConfig {
    *
    * @default `false`.
    */
-  readonly extensions?: string[] | false;
+  readonly extensions?: string[] | false | undefined;
 
   /**
    * Whether to add the `immutable` directive in the [Cache-Control] response header.
@@ -73,7 +73,7 @@ export interface ServeStaticConfig {
    *
    * [Cache-Control]: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control
    */
-  readonly immutable?: boolean;
+  readonly immutable?: boolean | undefined;
 
   /**
    * Whether to send `index.html` file in response to a request on a directory.
@@ -85,7 +85,7 @@ export interface ServeStaticConfig {
    *
    * @default `true`.
    */
-  readonly index?: boolean | string | string[];
+  readonly index?: boolean | string | string[] | undefined;
 
   /**
    * Whether to send a [Last-Modified] header.
@@ -96,7 +96,7 @@ export interface ServeStaticConfig {
    *
    * @default `true`
    */
-  readonly lastModified?: boolean;
+  readonly lastModified?: boolean | undefined;
 
   /**
    * Provide a max-age in milliseconds for http caching.
@@ -105,13 +105,13 @@ export interface ServeStaticConfig {
    *
    * @default `0`
    */
-  readonly maxAge?: number | string;
+  readonly maxAge?: number | string | undefined;
 
   /**
    * Redirect to trailing `/` when the pathname is a dir.
    *
    * @default `true`
    */
-  readonly redirect?: boolean;
+  readonly redirect?: boolean | undefined;
 
 }
