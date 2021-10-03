@@ -1,6 +1,6 @@
 /**
  * @packageDocumentation
- * @module Module @hatsy/serve-static
+ * @module @hatsy/serve-static
  */
 export * from './serve-static.handler';
 export * from './serve-static-config';

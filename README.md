@@ -45,5 +45,5 @@ server.listen(8080);
 ```
 
 [send]: https://www.npmjs.com/package/send 
-[serveStatic()]: https://hatsyjs.github.io/kit/modules/@hatsy_serve-static.html#serveStatic
-[ServeStaticConfig]: https://hatsyjs.github.io/kit/interfaces/@hatsy_serve-static.ServeStaticConfig.html
+[serveStatic()]: https://hatsyjs.github.io/serve-static/modules.html#serveStatic
+[ServeStaticConfig]: https://hatsyjs.github.io/serve-static/interfaces/ServeStaticConfig.html
