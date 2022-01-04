@@ -1,6 +1,6 @@
 import { HttpError, HttpMeans, RequestHandler } from '@hatsy/hatsy';
 import type { RouterMeans } from '@hatsy/router';
-import { resolve } from 'path';
+import { resolve } from 'node:path';
 import send from 'send';
 import { redirectToDirectory } from './redirect-to-directory.impl';
 import type { ServeStaticConfig } from './serve-static-config';
