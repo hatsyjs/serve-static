@@ -2,7 +2,6 @@
  * Static contents service configuration.
  */
 export interface ServeStaticConfig {
-
   /**
    * Whether ranged requests accepted.
    *
@@ -113,5 +112,4 @@ export interface ServeStaticConfig {
    * @default `true`
    */
   readonly redirect?: boolean | undefined;
-
 }

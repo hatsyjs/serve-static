@@ -13,16 +13,14 @@ import type { ServeStaticConfig } from './serve-static-config';
  *
  * @returns New HTTP route processing handler.
  */
-export function serveStatic(root: string, config: ServeStaticConfig = {}): RequestHandler<HttpMeans & RouterMeans> {
-
-  const {
-    redirect = true,
-    maxAge = 0,
-  } = config;
+export function serveStatic(
+  root: string,
+  config: ServeStaticConfig = {},
+): RequestHandler<HttpMeans & RouterMeans> {
+  const { redirect = true, maxAge = 0 } = config;
   const opts = { ...config, maxAge, root: resolve(root) };
 
   return async context => {
-
     const { request, response, route, fullRoute } = context;
 
     if (request.method !== 'GET' && request.method !== 'HEAD') {
@@ -30,11 +28,8 @@ export function serveStatic(root: string, config: ServeStaticConfig = {}): Reque
     }
 
     await new Promise<void>((resolve, reject) => {
-
       // Ensure the path does not start with `/` unless a directory requested.
-      const path = route.path.length
-          ? `/${route.toPathString()}`
-          : (fullRoute.dir ? '/' : '');
+      const path = route.path.length ? `/${route.toPathString()}` : fullRoute.dir ? '/' : '';
       const stream = send(request, path, opts);
 
       stream.on('directory', () => {

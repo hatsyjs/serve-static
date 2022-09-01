@@ -4,13 +4,10 @@ import type { RouterMeans } from '@hatsy/router';
 /**
  * @internal
  */
-export function redirectToDirectory(
-    {
-      fullRoute,
-      response,
-    }: RequestContext<HttpMeans & RouterMeans>,
-): void {
-
+export function redirectToDirectory({
+  fullRoute,
+  response,
+}: RequestContext<HttpMeans & RouterMeans>): void {
   const { url } = fullRoute;
 
   // send redirect response
