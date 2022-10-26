@@ -20,16 +20,19 @@
   "type": "module",
   "main": "./dist/serve-static.js",
   "types": "./index.d.ts",
-  "exports": "./dist/serve-static.js",
+  "exports": {
+    "types": "./index.d.ts",
+    "default": "./dist/serve-static.js"
+  },
   "dependencies": {
     "send": "^0.18.0"
   },
   "peerDependencies": {
-    "@hatsy/hatsy": "^2.5.0",
+    "@hatsy/hatsy": "^2.5.2",
     "@hatsy/router": "^2.3.0"
   },
   "devDependencies": {
-    "@hatsy/hatsy": "^2.5.1",
+    "@hatsy/hatsy": "^2.5.2",
     "@hatsy/route-match": "^1.4.0",
     "@hatsy/router": "^2.3.0",
     "@jest/globals": "^29.2.2",
