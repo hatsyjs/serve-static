@@ -1,6 +1,5 @@
 {
   "entryPoints": ["src/index.ts"],
   "name": "Serve static content",
-  "out": "./target/typedoc",
-  "tsconfig": "tsconfig.main.json"
+  "out": "./target/typedoc"
 }
