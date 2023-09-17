@@ -1,11 +1,11 @@
 import type { HttpMeans } from '@hatsy/hatsy';
-import { Logging } from '@hatsy/hatsy/core';
-import { TestHttpServer } from '@hatsy/hatsy/testing';
+import { Logging } from '@hatsy/hatsy/core.js';
+import { TestHttpServer } from '@hatsy/hatsy/testing.js';
 import { dispatchByName, RouterMeans, Routing } from '@hatsy/router';
 import { afterAll, beforeAll, beforeEach, describe, expect, it } from '@jest/globals';
 import { silentLogger } from '@proc7ts/logger';
-import type { ServeStaticConfig } from './serve-static-config';
-import { serveStatic } from './serve-static.handler';
+import type { ServeStaticConfig } from './serve-static-config.js';
+import { serveStatic } from './serve-static.handler.js';
 
 describe('serveStatic', () => {
   let server: TestHttpServer;

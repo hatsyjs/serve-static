@@ -2,8 +2,8 @@ import { HttpError, HttpMeans, RequestHandler } from '@hatsy/hatsy';
 import type { RouterMeans } from '@hatsy/router';
 import { resolve } from 'node:path';
 import send from 'send';
-import { redirectToDirectory } from './redirect-to-directory.impl';
-import type { ServeStaticConfig } from './serve-static-config';
+import { redirectToDirectory } from './redirect-to-directory.impl.js';
+import type { ServeStaticConfig } from './serve-static-config.js';
 
 /**
  * Creates a request handler that serves static content from the given `root` directory.
@@ -39,8 +39,8 @@ export function serveStatic(
           resolve(redirectToDirectory(context));
         }
       });
-      stream.on('error', (error: HttpError) => {
-        reject(new HttpError(error.statusCode, { message: error.message, reason: error }));
+      stream.on('error', (cause: HttpError) => {
+        reject(new HttpError(cause.statusCode, { message: cause.message, cause }));
       });
 
       stream.on('end', resolve);
